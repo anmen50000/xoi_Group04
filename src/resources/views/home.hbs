@@ -1,0 +1,20 @@
+
+<div class="mt-4">
+    <div class="row">
+        {{#each courses}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card card-course-item">
+                <div class="card-body">
+                    <a href="/courses/{{this.slug}}">
+                        <h5 class="card-title">{{this.name}}</h5>
+                    </a>
+                     <p class="card-text">Số điện thoại: {{this.phone}}</p>
+                     <p class="card-text">Địa chỉ: {{this.address}}</p>
+                     <p class="card-text">Giới tính: {{this.gender}}</p>
+                     <p class="card-text">Gmail: {{this.gmail}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
